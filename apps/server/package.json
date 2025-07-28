@@ -16,20 +16,23 @@
     "db:down": "docker compose down"
   },
   "dependencies": {
+    "@trpc/client": "^11.4.2",
+    "@trpc/server": "^11.4.2",
+    "@workspace/schemas": "workspace:*",
+    "dotenv": "^16.5.0",
+    "drizzle-orm": "^0.44.2",
+    "drizzle-zod": "^0.7.0",
     "next": "15.3.0",
+    "pg": "^8.14.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "dotenv": "^16.5.0",
-    "@trpc/server": "^11.4.2",
-    "@trpc/client": "^11.4.2",
-    "drizzle-orm": "^0.44.2",
-    "pg": "^8.14.1"
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/pg": "^8.11.11",
     "@types/react": "^19",
-    "typescript": "^5",
     "drizzle-kit": "^0.31.2",
-    "@types/pg": "^8.11.11"
+    "typescript": "^5"
   }
 }

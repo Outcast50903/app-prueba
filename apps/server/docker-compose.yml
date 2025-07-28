@@ -2,7 +2,7 @@ name: prueba-tecnica-diego-garcia
 
 services:
   postgres:
-    image: postgres
+    image: postgres:17-alpine
     container_name: prueba-tecnica-diego-garcia-postgres
     environment:
       POSTGRES_DB: prueba-tecnica-diego-garcia

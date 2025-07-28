@@ -1,2 +1,12 @@
 node_modules
 .turbo
+
+**/node_modules
+**/dist
+**/build
+**/coverage
+**/logs
+**/temp
+**/cache
+**/test-results
+**/test-results

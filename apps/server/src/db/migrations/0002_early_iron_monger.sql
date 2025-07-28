@@ -1,0 +1,1 @@
+ALTER TABLE "post" RENAME TO "app_post";

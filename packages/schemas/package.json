@@ -1,0 +1,39 @@
+{
+  "name": "@workspace/schemas",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./schemas": {
+      "require": "./dist/schemas/index.js",
+      "import": "./dist/schemas/index.mjs",
+      "types": "./dist/schemas/index.d.ts"
+    }
+  },
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "npx eslint . --max-warnings 0"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.44.3",
+    "drizzle-zod": "^0.8.2",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@workspace/eslint-config": "workspace:*",
+    "@workspace/typescript-config": "workspace:*",
+    "eslint": "catalog:eslint",
+    "tsup": "catalog:tsup"
+  }
+}
